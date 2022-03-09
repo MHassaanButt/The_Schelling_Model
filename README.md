@@ -30,13 +30,18 @@ Make program that performs a simulation of the Schelling Model. You can use your
 language.
 
 • The world is a 40 × 40 grid, for a total of G = 1600 cells
+
 • The population P is expressed as a fraction of the cells. Consider P = 0.9.
+
 • The agents are always 50% X and 50% O.
+
 • The satisfaction threshold is set to t = {3, 4}.
+
 • Agents are updated according to the cell they occupy, left-to-right, top-to-bottom. Start at
 the top-left corner in the grid, move left-to-right along the first row, and update all the agents
 you encounter. Once done with the row, move down to the leftmost cell of the second row,
 and repeat the above steps.
+
 • Unsatisfied agents move to the closest cell that makes them satisfied. Use an 8-Chebyshev
 distance to find the closest cell. If no satisfactory cell is found in an 8-Chebyshev distance
 radius, you can move the agent to a randomly selected empty cell in the grid.
